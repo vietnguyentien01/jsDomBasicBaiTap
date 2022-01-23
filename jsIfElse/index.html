@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card mx-auto my-5" style="width: 18rem;">
+            <div class="card-header text-white bg-dark text-center">
+                Sắp xếp số theo thứ tự tăng dần
+            </div>
+            <div class="card-body">
+                <form>
+                    <p>Sắp xếp số theo thứ tự tăng dần:</p>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="number1" placeholder="Số thứ nhất">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="number2" placeholder="Số thứ hai">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" id="number3" placeholder="Số thứ ba">
+                    </div>
+                    <button onclick="sapXepSo()" type="button" class="btn btn-danger" id="btnCalc">Sắp xếp
+                        nào</button>
+                    <p id="txtSapXep"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mx-auto my-5" style="width: 18rem;">
+            <div class="card-header text-white bg-dark text-center">
+                Chương trình chào hỏi các thành viên gia đình
+            </div>
+            <div class="card-body">
+                <select id="txtChange" class="custom-select" onchange="thanhVienGiaDinh()">
+                    <option selected disabled>Ai đang sử dụng máy</option>
+                    <option value="<br> Bố đang sử dụng máy">Bố</option>
+                    <option value="<br> Mẹ đang sử dụng máy">Mẹ</option>
+                    <option value="<br> Anh đang sử dụng máy">Anh Trai</option>
+                    <option value="<br> Em đang sử dụng máy">Em Gái</option>
+                </select>
+                <p id="txtGiaDinh"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mx-auto my-5" style="width: 18rem;">
+        <div class="card-header text-white bg-dark text-center">
+            Xuất số chẵn lẻ
+        </div>
+        <div class="card-body">
+            <form>
+                <p>Xuất số chẵn lẻ:</p>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="txtNumber1" placeholder="Số thứ nhất">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="txtNumber2" placeholder="Số thứ hai">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="txtNumber3" placeholder="Số thứ ba">
+                </div>
+                <button onclick="xuatChanLe()" type="button" class="btn btn-danger" id="btnCalc">Sắp xếp
+                    nào</button>
+                <p id="txtChanLe"></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mx-auto my-5" style="width: 18rem;">
+        <div class="card-header text-white bg-dark text-center">
+            Xác định loại tam giác
+        </div>
+        <div class="card-body">
+            <form>
+                <p>Xác định loại tam giác:</p>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="txtNumber4" placeholder="Số a">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="txtNumber5" placeholder="Số b">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" id="txtNumber6" placeholder="Số c">
+                </div>
+                <button onclick="xacDinhLoaiTamGiac()" type="button" class="btn btn-danger" id="btnCalc">Sắp xếp
+                    nào</button>
+                <p id="txtTamGiac"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
